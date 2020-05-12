@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1904E6AC246AC7DA0011A1E2 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1904E6AB246AC7DA0011A1E2 /* CardModel.swift */; };
+		1904E6AE246ACA450011A1E2 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1904E6AD246ACA450011A1E2 /* Card.swift */; };
 		1908EEA0246ABE8D003C311D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1908EE9F246ABE8D003C311D /* AppDelegate.swift */; };
 		1908EEA2246ABE8D003C311D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1908EEA1246ABE8D003C311D /* SceneDelegate.swift */; };
 		1908EEA4246ABE8D003C311D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1908EEA3246ABE8D003C311D /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1904E6AB246AC7DA0011A1E2 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		1904E6AD246ACA450011A1E2 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		1908EE9C246ABE8D003C311D /* MatchGameStoryboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatchGameStoryboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1908EE9F246ABE8D003C311D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1908EEA1246ABE8D003C311D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +60,8 @@
 		1908EE9E246ABE8D003C311D /* MatchGameStoryboard */ = {
 			isa = PBXGroup;
 			children = (
+				1904E6AB246AC7DA0011A1E2 /* CardModel.swift */,
+				1904E6AD246ACA450011A1E2 /* Card.swift */,
 				1908EE9F246ABE8D003C311D /* AppDelegate.swift */,
 				1908EEA1246ABE8D003C311D /* SceneDelegate.swift */,
 				1908EEA3246ABE8D003C311D /* ViewController.swift */,
@@ -139,6 +145,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1908EEA4246ABE8D003C311D /* ViewController.swift in Sources */,
+				1904E6AC246AC7DA0011A1E2 /* CardModel.swift in Sources */,
+				1904E6AE246ACA450011A1E2 /* Card.swift in Sources */,
 				1908EEA0246ABE8D003C311D /* AppDelegate.swift in Sources */,
 				1908EEA2246ABE8D003C311D /* SceneDelegate.swift in Sources */,
 			);
