@@ -1,24 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="landscape" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MatchGameStoryboard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="qyI-eS-dSc">
+                                <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ttf-ln-04W">
+                                <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2s8-JW-zmq">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="aZW-yO-QZV">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="cI9-38-jdt">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="qyI-eS-dSc" secondAttribute="trailing" constant="328" id="3yN-Ix-ZJ6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ttf-ln-04W" secondAttribute="bottom" id="4if-MB-04q"/>
+                            <constraint firstItem="qyI-eS-dSc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Ahe-Cg-M3w"/>
+                            <constraint firstAttribute="trailing" secondItem="qyI-eS-dSc" secondAttribute="trailing" id="Coe-MQ-kC1"/>
+                            <constraint firstAttribute="bottom" secondItem="qyI-eS-dSc" secondAttribute="bottom" id="D6k-fR-3pl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ttf-ln-04W" secondAttribute="trailing" id="DCX-Dt-RDc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ttf-ln-04W" secondAttribute="trailing" id="GMk-zH-noy"/>
+                            <constraint firstItem="ttf-ln-04W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Yxr-yS-o0X"/>
+                            <constraint firstItem="ttf-ln-04W" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="cxf-YZ-71i"/>
+                            <constraint firstItem="ttf-ln-04W" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="fGZ-pn-Bcj"/>
+                            <constraint firstItem="ttf-ln-04W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fp6-3x-INN"/>
+                            <constraint firstItem="ttf-ln-04W" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="gMa-5e-lDA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ttf-ln-04W" secondAttribute="trailing" id="hqr-OV-gjC"/>
+                            <constraint firstItem="qyI-eS-dSc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="oTv-17-Wvp"/>
+                            <constraint firstItem="ttf-ln-04W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rpH-kg-c2j"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ttf-ln-04W" secondAttribute="bottom" id="yLQ-hq-Z7y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ttf-ln-04W" secondAttribute="bottom" id="zId-vg-I4l"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="139" y="117"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="background" width="736" height="414"/>
+    </resources>
 </document>
