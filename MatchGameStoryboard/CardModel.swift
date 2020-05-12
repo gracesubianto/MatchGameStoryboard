@@ -10,8 +10,8 @@ import Foundation
 
 class CardModel{
     
-    
-    func GetCards() -> [Card] {
+    func getCards() -> [Card] {
+        
         //declare an array to store the generated cards
         var generatedCardsArray = [Card]()
         
@@ -23,13 +23,13 @@ class CardModel{
             
             //create first card object
             let cardOne = Card()
-            cardOne.imageName = "card\(randomNUmber)"
+            cardOne.imageName = "card\(randomNumber)"
             
             generatedCardsArray.append(cardOne)
             
             //create second card object
             let cardTwo = Card()
-            cardTwo.imageName = "card\(randomNUmber)"
+            cardTwo.imageName = "card\(randomNumber)"
             
             generatedCardsArray.append(cardTwo)
             
